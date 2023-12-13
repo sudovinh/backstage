@@ -61,7 +61,7 @@ jobs:
         with:
           context: './example-app'
           file: ./example-app/packages/backend/Dockerfile
-          push: ghcr.io/${{ github.repository_owner }}/backstage:latest
+          push: true
           platforms: linux/amd64,linux/arm64
           tags: |
             ghcr.io/${{ github.repository_owner }}/backstage:latest
